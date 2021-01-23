@@ -1,5 +1,6 @@
 export { default as MACDTooltip } from "./MACDTooltip";
 export { default as OHLCTooltip } from "./OHLCTooltip";
+export { default as PriceVolumeTooltip } from "./PriceVolumeTooltip";
 export { default as SingleValueTooltip } from "./SingleValueTooltip";
 export { default as MovingAverageTooltip } from "./MovingAverageTooltip";
 export { default as BollingerBandTooltip } from "./BollingerBandTooltip";

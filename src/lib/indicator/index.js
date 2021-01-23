@@ -18,6 +18,7 @@ export { default as elderRay } from "./elderRay";
 export { default as change } from "./change";
 export { default as elderImpulse } from "./elderImpulse";
 export { default as compare } from "./compare";
+export { default as interpolatePrevious } from "./interpolatePrevious";
 
 import * as defaultOptionsForComputation from "../calculator/defaultOptionsForComputation";
 import * as defaultOptionsForAppearance from "./defaultOptionsForAppearance";

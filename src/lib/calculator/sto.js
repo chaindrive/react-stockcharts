@@ -38,11 +38,11 @@ export default function() {
 	let source = d => ({ open: d.open, high: d.high, low: d.low, close: d.close });
 
 	function calculator(data) {
-		const { windowSize, kWindowSize, dWindowSize } = options;
+		const { windowSize, kWindowSize, dWindowSize, sourcePath } = options;
 
-		const high = d => source(d).high,
-			low = d => source(d).low,
-			close = d => source(d).close;
+		const high = d => source(d).high || d[sourcePath],
+			low = d => source(d).low || d[sourcePath],
+			close = d => source(d).close || d[sourcePath];
 
 		const kWindow = slidingWindow()
 			.windowSize(windowSize)

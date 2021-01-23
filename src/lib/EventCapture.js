@@ -106,7 +106,7 @@ class EventCapture extends Component {
 		const yZoom = Math.abs(e.deltaY) > Math.abs(e.deltaX) && Math.abs(e.deltaY) > 0;
 		// const xPan = Math.abs(e.deltaY) < Math.abs(e.deltaX) && Math.abs(e.deltaX) > 0;
 		const mouseXY = mousePosition(e);
-		e.preventDefault();
+		//e.preventDefault();
 
 		if (zoom && this.focus && yZoom && !panInProgress) {
 			const zoomDir = e.deltaY > 0 ? 1 : -1;

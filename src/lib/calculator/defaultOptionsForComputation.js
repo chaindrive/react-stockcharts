@@ -119,3 +119,7 @@ export const PointAndFigure = {
 	dateAccessor: d => d.date,
 	dateMutator: (d, date) => { d.date = date; }, */
 };
+
+export const InterpolatePrevious = {
+	sourcePath:"close"
+}
